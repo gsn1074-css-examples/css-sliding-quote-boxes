@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Helvetica, sans-serif;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+[data-player] {
+  position: relative;
+  width: 50vw;
+  font-size: 2em; }
+
+[data-player] > .quoteBox {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 10em;
+  left: 0;
+  text-align: center;
+  border: 1px solid #fff;
+  padding: .5em;
+  opacity: 0;
+  transition: all 1s; }
+
+.quoteBox p {
+  margin-top: 1em; }
+
+[data-player] > [data-status="visible"] {
+  opacity: 1;
+  top: 0; }
